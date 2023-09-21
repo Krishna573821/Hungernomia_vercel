@@ -5,9 +5,24 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'NHaasGroteskDSPro-65Md' !important;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.nav-link{
+  color: white !important;
+}
+
+#carousel{
+  height: 500px;
+}
+
+.carouselimg{
+  object-fit: cover !important;
+  height: 500px !important;
 }
