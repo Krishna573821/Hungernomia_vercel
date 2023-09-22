@@ -69,8 +69,8 @@ video{
   background: rgb(238, 174, 202);
   background: radial-gradient(
     circle,
-    rgba(238, 174, 202, 1) 0%,
-    rgba(226, 230, 236, 1) 100%
+    rgba(238, 174, 202, 0.4) 0%,
+    rgba(226, 230, 236, 0.4) 100%
   );
   width: 60% !important;
 }
@@ -111,3 +111,11 @@ video{
 }
 
 
+.formimage img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+}

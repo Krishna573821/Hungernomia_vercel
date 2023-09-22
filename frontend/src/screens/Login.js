@@ -43,7 +43,8 @@ export default function Login() {
   };
   return (
     
-    <div className='container d-flex maincontainer'>
+    <div className='container d-flex maincontainer formimage'>
+      <img src='https://img.freepik.com/free-photo/top-view-hamburger-with-copy-space_23-2148575421.jpg?w=996&t=st=1695304434~exp=1695305034~hmac=c62cd13c633d54db9659610b09343e3884fdd9ca01a26d8a610ba8085b2793b0'></img>
       <div className="container mainbg w-60">
         
 
