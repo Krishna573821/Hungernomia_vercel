@@ -21,7 +21,13 @@ app.get("/", (req, res) => {
 });
 
 app.use(express.json())
-app.use(cors())
+app.use(cors(
+  {
+    origin:["https://gofood-steel.vercel.app/"],
+    methods: ["POST","GET"],
+    credentials: true
+  }
+))
 
 app.use('/api', require("./Routes/CreateUser"))
 app.use('/api', require("./Routes/DisplayData"))

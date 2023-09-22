@@ -35,7 +35,7 @@ export default function Signup() {
         alert("Enter Valid Credentials");
     }else {
       
-      navigate("/");
+      navigate("/login");
     }
     
   };
@@ -123,7 +123,7 @@ export default function Signup() {
             />
           </div>
           <div className='buttoncss d-flex justify-content-center align-items-center'>
-          <Link to="/login" type="submit" className="m-3 btn btn-success" onClick={handleSubmit}>
+          <Link type="submit" className="m-3 btn btn-success" onClick={handleSubmit}>
             Submit
           </Link>
           <Link to="/login" className="m-3 mx-1 btn btn-danger">
