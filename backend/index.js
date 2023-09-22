@@ -45,3 +45,5 @@ app.post("/api/create-checkout-session", async (req, res) => {
   res.json({ id: session.id });
 });
 
+
+module.exports = app;
