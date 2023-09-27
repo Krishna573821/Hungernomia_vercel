@@ -7,6 +7,7 @@ const mongoDB = require("./db");
 mongoDB();
 
 app.use(express.json());
+
 app.use(cors({
   origin: ["https://go-food-frontend-omega.vercel.app"],
   methods: ["POST", "GET"],
