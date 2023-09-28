@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 async function mongoDB() {
   const dbUrl =
-    "mongodb://gofood:bluewhale@ac-txxhwg6-shard-00-00.u8lmxiv.mongodb.net:27017,ac-txxhwg6-shard-00-01.u8lmxiv.mongodb.net:27017,ac-txxhwg6-shard-00-02.u8lmxiv.mongodb.net:27017/gofoodmern?ssl=true&replicaSet=atlas-1xd2wo-shard-0&authSource=admin&retryWrites=true&w=majority";
+    "mongodb+srv://gofood:bluewhale@cluster0.u8lmxiv.mongodb.net/gofoodmern?retryWrites=true&w=majority";
 
     try {
       await mongoose.connect(dbUrl, {
