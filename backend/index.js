@@ -39,8 +39,8 @@ app.post("/api/create-checkout-session", async (req, res) => {
     payment_method_types: ["card"],
     line_items: lineitems,
     mode: "payment",
-    success_url: "https://go-food-frontend-omega.vercel.app/success", // Replace with your actual Vercel app URL
-    cancel_url: "https://go-food-frontend-omega.vercel.app/cancel" // Replace with your actual Vercel app URL
+    success_url: "https://go-food-frontend-omega.vercel.app/success", 
+    cancel_url: "https://go-food-frontend-omega.vercel.app/cancel"
   });
 
   res.json({ id: session.id });

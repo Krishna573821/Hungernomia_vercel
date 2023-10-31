@@ -1,12 +1,23 @@
 {
-    "version": 2,
-    "builds":[
-       { "src": "*.js", "use": "@vercel/node"}
+    "builds": [
+      { "src": "*.js", "use": "@vercel/node" }
     ],
-    "routes":[
-        {
-            "src":"/(.*)",
-            "dest":"/"
-        }
+    "rewrites": [
+      {
+        "source": "/(.*)",
+        "destination": "/index.html"
+      }
+    ],
+    "headers": [
+      {
+        "source": "/_next/static/(.*)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache"
+          }
+        ]
+      }
     ]
-}
+  }
+  
